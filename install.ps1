@@ -49,7 +49,7 @@ function CloneRepo {
     }
 
     Write-Host "Clone config files at $HOME\.dotfiles ..."
-    git clone https://github.com/zandler/dotfiles-windows.git $HOME\.dotfiles 
+    git clone https://github.com/banco-bmg/dotfiles-windows.git $HOME\.dotfiles 
     cd $HOME\.dotfiles ; 
     Start-Sleep -Seconds 2
 }
