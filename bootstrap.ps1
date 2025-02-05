@@ -83,7 +83,7 @@ function InstallApps {
         "nerd-fonts/JetBrainsMono-NF",
         "nerd-fonts/JetBrainsMono-NF-Mono",
         "main/eza",
-        "extras/bruno",
+        "extras/postman",
         "main/helix",
         "extras/dbeaver",
         "main/aws",
@@ -178,8 +178,10 @@ function IsAdmin {
 
     if ($isAdmin) {
         Write-Host "You'r local admin. "
+        return true
     } else {
         Write-Host "You are not admin local. Skip Install WSL "
+        return false
     Exit
     }
 }
