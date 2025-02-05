@@ -20,7 +20,7 @@ Enjoy
 
 '''powershell
 
-
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Iwr -Uri https://raw.githubusercontent.com/Zandler/dotfiles-windows/refs/heads/main/install.ps1 -OutFile install.ps1; ./install.ps1
 
 '''
