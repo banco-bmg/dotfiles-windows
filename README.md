@@ -18,12 +18,12 @@ Enjoy
 1. Update yout system
 2. Execute command thi command. (NOTE: No need local admin)
 
-'''powershell
+```powershell
 
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-Iwr -Uri https://raw.githubusercontent.com/Zandler/dotfiles-windows/refs/heads/main/install.ps1 -OutFile install.ps1; ./install.ps1
+Iwr -Uri https://raw.githubusercontent.com/banco-bmg/dotfiles-windows/refs/heads/main/install.ps1 -OutFile install.ps1; ./install.ps1
 
-'''
+```
 
 This script:
 - Install scoop
