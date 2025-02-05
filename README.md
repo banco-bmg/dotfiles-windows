@@ -2,34 +2,38 @@
 
 ## A submodule for dotfiles repo (http://github.com/Zandler/dotfiles)
 
+This repo contains all my config files for windows 11. The most significant thing is cannot need local admin rigths.
+
+Enjoy
+
 
 ### Requirements
 
 - Windows 11 (recomended a clean environment)
-- Git 
 - Powershell > 5
 
 
 ### Instructions 
 
 1. Update yout system
-2. Install dependencies 
-3. Clone this repo
+2. Execute command thi command. (NOTE: No need local admin)
 
 '''powershell
 
-git clone https://github.com/Zandler/dotfiles-windows.git 
 
-cd dotfiles-windows
-.\install.ps1
+Iwr -Uri https://raw.githubusercontent.com/Zandler/dotfiles-windows/refs/heads/main/install.ps1 -OutFile install.ps1; ./install.ps1
+
 '''
 
 This script:
-- Create a foder with name devxp at $HOME 
-- Move some config files inside $HOME\.devxp\config folder (Powershell profile included)
-- Install WSL2 because Rancher desktop needs wsl.
-- Install Scoop
-- Add some buckets to scoop
-- Install apps
-**If you want install more softwares, go to https://scoop.sh/#/apps and search you app. Next add after line 98**
+- Install scoop
+- Install git
+- Clone this repo
+- Execute bootstrap.ps1
+  - Config environment
+  - Install some default apps like vscode, power toys, dotnet 
+  - **IF** ONLY IF you are local admin, install wsl with Ubuntu
+
+
+That's it!
 
