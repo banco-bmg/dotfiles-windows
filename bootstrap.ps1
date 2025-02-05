@@ -95,7 +95,7 @@ function InstallApps {
         "main/omnisharp",
         "main/netcoredbg",
         "versions/dotnet6-sdk",
-        "main/dotnet-sdk-lts"
+        "versions/dotnet-sdk-lts"
     
     # Update System before install
     scoop update 
