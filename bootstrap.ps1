@@ -97,7 +97,8 @@ function InstallApps {
         "main/netcoredbg",
         "versions/dotnet6-sdk",
         "versions/dotnet-sdk-lts",
-        "java/oraclejdk-lts" 
+        "java/oraclejdk-lts",
+        "extras/soapui"
     
     # Update System before install
     scoop update 
