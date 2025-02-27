@@ -47,7 +47,8 @@ function AddScoopButckets {
 
     $BUCKETS="extras",
             "versions",
-            "nerd-fonts"
+            "nerd-fonts",
+            "java"
 
     Write-Host "Add buckets" -ForegroundColor DarkCyan
     Start-Sleep -Seconds 3
@@ -95,7 +96,8 @@ function InstallApps {
         "main/omnisharp",
         "main/netcoredbg",
         "versions/dotnet6-sdk",
-        "versions/dotnet-sdk-lts"
+        "versions/dotnet-sdk-lts",
+        "java/oraclejdk-lts" 
     
     # Update System before install
     scoop update 
